@@ -35,18 +35,14 @@ class LogIn extends React.Component {
 
     return (
       <div className={styles['email-wrapper']}>
-        {'You can log in with these credentials'}
-
-        <ul>
-          <li>{'email: jhondoe@example.com'}</li>
-          <li>{'password: test1234'}</li>
-        </ul>
 
         <input type='text' ref='email' placeholder='Email' />
         <input type='password' ref='password' placeholder='Password' />
         <button onClick={(event) => this.handleClick(event)} className="btn btn-primary">
           {'Login'}
         </button>
+        <br/>
+        <a href="/signup">Sign Up</a>
       </div>
     );
   }

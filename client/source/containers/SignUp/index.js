@@ -44,6 +44,8 @@ class SignUp extends React.Component {
         <button onClick={(event) => this.handleClick(event)} className="btn btn-primary">
           {'Sign up'}
         </button>
+        <br/>
+        <a href="/login">Login</a>
       </div>
     );
   }

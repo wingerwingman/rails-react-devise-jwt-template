@@ -34,8 +34,7 @@ export default class AppBar extends React.Component {
     if (auth.user) {
       return <FlatButton label="Logout" onTouchTap={this.logoutUser} />;
     } else {
-      return <FlatButton label="Login" onTouchTap={this.handleClick.bind(this, '/login')} />;
-      return <FlatButton label="SignUp" onTouchTap={this.handleClick.bind(this, '/signup')} />;
+      return <FlatButton label="Login" onTouchTap={this.handleClick.bind(this, '/login')} />
     }
   }
 
